@@ -1,0 +1,25 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# hex
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+Project hex images for projects
+
+```{r, results = "asis", echo = FALSE}
+fig_file <- dir(path = "images/logos", pattern = "png$")
+
+glue::glue('<a href="images/logos/{fig_file}"><img src="images/logos/{fig_file}" width="100"></a> ')
+```
