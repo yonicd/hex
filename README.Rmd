@@ -11,15 +11,17 @@ knitr::opts_chunk$set(
 )
 ```
 
-# hex
-
-<!-- badges: start -->
-<!-- badges: end -->
-
-Project hex images for projects
+# Projects Hex Images
 
 ```{r, results = "asis", echo = FALSE}
 fig_file <- dir(path = "images/logos", pattern = "png$")
 
 glue::glue('<a href="images/logos/{fig_file}"><img src="images/logos/{fig_file}" width="100"></a> ')
 ```
+
+## Reproducing the Images
+
+* Create the images using the scripts in the [script](script) subdirectory. 
+
+* The scripts depend on the [{bunny}](https://github.com/dmi3kno/bunny) package by @dmi3kno and [{hexSticker}](https://github.com/GuangchuangYu/hexSticker) by @GuangchuangYu.
+
