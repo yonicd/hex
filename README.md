@@ -6,6 +6,7 @@
 <a href="images/logos/carbonate.png"><img src="images/logos/carbonate.png" width="100"></a>
 <a href="images/logos/covrpage.png"><img src="images/logos/covrpage.png" width="100"></a>
 <a href="images/logos/details.png"><img src="images/logos/details.png" width="100"></a>
+<a href="images/logos/helpdesk.png"><img src="images/logos/helpdesk.png" width="100"></a>
 <a href="images/logos/ripe.png"><img src="images/logos/ripe.png" width="100"></a>
 <a href="images/logos/shredder.png"><img src="images/logos/shredder.png" width="100"></a>
 <a href="images/logos/slickr.png"><img src="images/logos/slickr.png" width="100"></a>
