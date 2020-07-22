@@ -2,11 +2,11 @@ library(magick)
 library(bunny)
 
 bg_color <- "#ffffff"
-fg_color <- "#218a7dff"
+fg_color <- "#2b6143"
 
 sandbox <- image_read("script/slack/sandbox.png")
 
-green <- image_read("script/slack/slack-4.png")%>%
+green <- image_read_svg("script/slack/slack-4.svg")%>%
   image_scale("65%")%>%
   image_composite(sandbox%>%image_scale("500%"),
                   gravity = "center")
@@ -15,7 +15,7 @@ green_hex <- image_canvas_hex(
   fill_color = bg_color, 
   border_color = fg_color, 
   border_size = 5)%>%
-  image_composite(green,gravity = "north",offset = "+0-250") %>%
+  image_composite(green,gravity = "north",offset = "+0-50") %>%
   image_scale("20%")%>%
   image_annotate("slackreprex", 
                  color = fg_color,
@@ -48,4 +48,4 @@ shred_ghcard <- image_canvas_ghcard(fill_color = bg_color2) %>%
   image_border_ghcard(bg_color2)
 
 shred_ghcard %>%
-  image_write("images/cards/slackreprex_ghcard.png", density = 600)
+  image_write("images/cards/slackreprex.png", density = 600)
